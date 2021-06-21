@@ -10,7 +10,7 @@ I2C_ADDRESS     ::= 0x76
 I2C_ADDRESS_ALT ::= 0x77
 
 /**
-Driver for BME280 environmental sensor, using either I2C or SPI.
+Driver for the Bosch BME280 environmental sensor, using either I2C or SPI.
 */
 class Driver:
   static DIG_T1_REG_ ::= 0x88
