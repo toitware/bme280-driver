@@ -110,8 +110,6 @@ class Driver:
     t_fine := measure_
 
     adc_P := reg_.read_u24_be REGISTER_PRESSUREDATA_
-    if adc_P == 0x800000: throw "BME280: sensor is busy"
-
     adc_P >>= 4
 
     var1 := t_fine - 128000
@@ -121,7 +119,7 @@ class Driver:
     var1 = ((var1 * var1 * dig_P3_) >> 8) + ((var1 * dig_P2_) << 12)
     var1 = (((1 << 47) + var1) * dig_P1_) >> 33
 
-    if var1 == 0: return 0.0 // avoid exception caused by division by zero
+    if var1 == 0: return 0.0  // Avoid exception caused by division by zero.
 
     p := 1048576 - adc_P
     p = (((p << 31) - var2) * 3125) / var1
@@ -138,7 +136,6 @@ class Driver:
     t_fine := measure_
 
     adc_H := reg_.read_u16_be REGISTER_HUMIDDATA_
-    if adc_H == 0x8000: throw "BME280: sensor is busy"
 
     v_x1_u32r := t_fine - 76800
 
