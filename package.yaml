@@ -1,6 +1,0 @@
-# Toit Lock File.
-prefixes:
-  bme280: ..
-packages:
-  ..:
-    path: ..
