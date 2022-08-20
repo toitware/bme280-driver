@@ -11,7 +11,13 @@ main:
     --sda=gpio.Pin 21
     --scl=gpio.Pin 22
 
-  device := bus.device bme280.I2C_ADDRESS_ALT
+  // The BME280 can be configured to have one of two different addresses.
+  // - bme280.I2C_ADDRESS, equal to 0x76
+  // - bme280.I2C_ADDRESS_ALT, equal to 0x77
+  // The address is generally chosen by the break-out board.
+  // If the example fails with I2C_READ_FAILED verify that you are using the correct address.
+  address := bme280.I2C_ADDRESS
+  device := bus.device address
 
   driver := bme280.Driver device
 
