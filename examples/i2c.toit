@@ -16,11 +16,11 @@ main:
   // - bme280.I2C_ADDRESS_ALT, equal to 0x77
   // The address is generally chosen by the break-out board.
   // If the example fails with I2C_READ_FAILED verify that you are using the correct address.
-  address := bme280.I2C_ADDRESS
+  address := bme280.I2C-ADDRESS
   device := bus.device address
 
   driver := bme280.Driver device
 
-  print "$driver.read_temperature C"
-  print "$driver.read_pressure Pa"
-  print "$driver.read_humidity %"
+  print "$driver.read-temperature C"
+  print "$driver.read-pressure Pa"
+  print "$driver.read-humidity %"
