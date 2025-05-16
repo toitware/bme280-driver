@@ -1,0 +1,9 @@
+sdk: ^2.0.0-alpha.150
+prefixes:
+  sensors: toit-sensors
+packages:
+  toit-sensors:
+    url: github.com/toitware/toit-sensors
+    name: sensors
+    version: 0.0.1
+    hash: 8b76db6e4c08bd0d19f4d6bbc9eb235a4039f34b
