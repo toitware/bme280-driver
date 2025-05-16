@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-2020-12/schema",
-  "$id": "https://github.com/toitware/toit-bme280/service/schema.json",
+  "$id": "https://github.com/toitware/bme280-driver/service/schema.json",
   "title": "BME280 Configuration",
   "description": "Configuration for the BME280 temperature, humidity and pressure sensor.",
   "type": "object",
