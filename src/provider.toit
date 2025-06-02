@@ -33,11 +33,7 @@ class Sensor_
       sensor_ = bme280.Driver device_
       is-exception = false
     finally:
-      if is-exception:
-        if device_: device_.close
-        if i2c_: i2c_.close
-        if sda_: sda_.close
-        if scl_: scl_.close
+      if is-exception: close
 
   temperature-read -> float?:
     return sensor_.read-temperature

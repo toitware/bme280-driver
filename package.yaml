@@ -3,4 +3,4 @@ description: Driver for the Bosch BME280 environmental sensor.
 dependencies:
   sensors:
     url: github.com/toitware/toit-sensors
-    version: ^0.0.1
+    version: ^0.0.2
