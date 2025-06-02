@@ -5,5 +5,5 @@ packages:
   toit-sensors:
     url: github.com/toitware/toit-sensors
     name: sensors
-    version: 0.0.2
+    version: 1.0.0
     hash: f9f5662a0f21016259ff6907419e54d00223714a
