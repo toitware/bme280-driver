@@ -1,0 +1,5 @@
+prefixes:
+  bme280: ..
+packages:
+  ..:
+    path: ..
