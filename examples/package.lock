@@ -1,6 +1,13 @@
-# Toit Lock File.
+sdk: ^2.0.0-alpha.150
 prefixes:
   bme280: ..
 packages:
   ..:
     path: ..
+    prefixes:
+      sensors: toit-sensors
+  toit-sensors:
+    url: github.com/toitware/toit-sensors
+    name: sensors
+    version: 1.0.0
+    hash: f9f5662a0f21016259ff6907419e54d00223714a
