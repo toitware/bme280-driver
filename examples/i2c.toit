@@ -2,14 +2,13 @@
 // Use of this source code is governed by a MIT-style license that can be found
 // in the LICENSE file.
 
-import gpio
 import i2c
 import bme280
 
 main:
   bus := i2c.Bus
-    --sda=gpio.Pin 21
-    --scl=gpio.Pin 22
+    --sda=21
+    --scl=22
 
   // The BME280 can be configured to have one of two different addresses.
   // - bme280.I2C_ADDRESS, equal to 0x76
