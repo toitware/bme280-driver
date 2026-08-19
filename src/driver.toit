@@ -9,8 +9,7 @@ import serial.registers as serial
 /**
 Driver for the Bosch BME280 environmental sensor.
 
-Deprecated.
-Use the `bmx280` package instead.
+Deprecated. Use the `bmx280` package instead.
 */
 
 I2C-ADDRESS     ::= 0x76

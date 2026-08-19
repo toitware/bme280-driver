@@ -10,8 +10,7 @@ import .driver as bme280
 /**
 Service provider for the Bosch BME280 environmental sensor.
 
-Deprecated.
-Use the `bmx280` package instead.
+Deprecated. Use the `bmx280` package instead.
 */
 
 NAME ::= "toit.io/bme280"
