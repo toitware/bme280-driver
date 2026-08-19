@@ -1,5 +1,5 @@
 name: bme280
-description: Driver for the Bosch BME280 environmental sensor.
+description: Driver for the Bosch BME280 environmental sensor. Deprecated in favor of toit-pkg/toit-bmx280.
 environment:
   sdk: ^2.0.0-alpha.196
 dependencies:
